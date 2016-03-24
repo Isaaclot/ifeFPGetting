@@ -1,0 +1,53 @@
+
+.bakGroup{
+
+  /*padding: 20px;*/
+  width: 80%;
+  height: 460px;
+  margin: 20px;
+  position: absolute;
+  background-color: #EEE;
+}
+
+.teamNameBox{
+  width: 200px;
+  height: 120;
+  background-color: #FFF;
+  margin: 20px;
+  float: left;
+  text-align: right;
+}
+
+
+
+.teamNameLogo{
+  width: 80px;
+  height: 80px;
+  background-color: #EEE;
+  float: left;
+}
+
+.persionealLogo{
+  float: right;
+  width: 120px;
+  height: 420px;
+  margin: 20px;
+  background-color: #FFF;
+}
+
+.persionealLg{
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  background-color: #EEE;
+}
+
+.centerContent{
+  margin-top: 20px;
+  margin-left: 240px;
+  margin-right: 160px;
+  margin-bottom: 20px;
+
+  background-color: #FFF;
+
+}
