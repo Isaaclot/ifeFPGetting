@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+function sortDate(aqiDataT){
+  n = aqiDataT.length;
+  for (var i = 0; i < aqiDataT.length; i++) {
+    for (var j = 0; j < aqiDataT.length; j++) {
+       if (aqiDataT[j-1][1]>aqiDataT[j][1]) {
+         var temp = aqiDataT[j][1];
+         aqiDataT[j][1] = aqiDataT[j-1][1]
+         aqiDataT[j-1][1] = aqiDataT[j][1]
+       }
+    }
+  }
+  return aqiDataT;
+}
+
+
+(function (){
+  var ulele = document.getElementById("aqi-list");
+  var ap = sortDate(aqiData);
+  // for (var i = 0; i < aqiData.length; i++) {
+  //   var liele = document.createElement("li");
+  //   ulele.appendChild(liele);
+  //   var city = document.createTextNode(aqiData[i][0]+":"+aqiData[1][1]+":"+(new Date().getSeconds()));
+  //     liele.appendChild(city);
+  // }
+
+  for (var i = 0; i < ap.length; i++) {
+    var liele = document.createElement("li");
+    ulele.appendChild(liele);
+    var city = document.createTextNode("第"+i+1+"名："+aqiData[i][0]+":"+aqiData[i][1]+":"+(new Date().getSeconds()));
+    liele.appendChild(city);
+  }
+})();
+
+
+
+
+
+</script>
+</body>
+</html>
