@@ -8,3 +8,6 @@
     预览[enter linkdescription here](http://htmlpreview.github.io/?https://github.com/liangqian/ifeFPGetting/blob/master/Part1/task_01_02_01.html)
   + Task_3 ：布局position，float
     preview：[enter linkdescription here](http://htmlpreview.github.io/?https://github.com/liangqian/ifeFPGetting/blob/master/Part1/task_01_03_01.html)
++ Part_II
+  + task_13 ：[enter linkdescription here](http://htmlpreview.github.io/?https://github.com/liangqian/ifeFPGetting/blob/master/Part_II/task_02_01_01.html)
+  + task_14 : [enter linkdescription here](http://htmlpreview.github.io/?https://github.com/liangqian/ifeFPGetting/blob/master/Part_II/task_02_14.html)
