@@ -19,6 +19,10 @@ var aqiData = [
 ];
 
 (function (){
+  function sortMethod(a, b) {
+  return b[1] - a[1];
+  }
+  aqiData.sort(sortMethod);
   var ulele = document.getElementById("aqi-list");
   // var ap = sortDate(aqiData);
   var no = 0;
