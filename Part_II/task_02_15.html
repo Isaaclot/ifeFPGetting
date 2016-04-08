@@ -42,12 +42,11 @@ function getData() {
   for (var i = 0; i < tempData.length; i++) {
     var dd = new Array();
     dd[0] = tempData[i].innerHTML.substr(0,2);
-    dd[1] = tempData[i].innerHTML.substr(10,2)
+    dd[1] = parseInt(tempData[i].innerHTML.substr(10,2));
     data[i] = dd;
   }
 
   return data;
-
 }
 
 /**
@@ -61,6 +60,7 @@ function getData() {
 
 function sortAqiData(data) {
   data.sort(sortMethod)
+  return data;
 }
 
  /*
@@ -70,11 +70,15 @@ function sortAqiData(data) {
  */
 function render(data) {
   var resort = document.getElementById("resort");
-  var lieli = document.createElement("li");
-  resort.appendChild(lieli);
-  var litxt = document.createTextNode();
   for (var i = 0; i < data.length; i++) {
-    alert(data[i])
+    var lieli = document.createElement("li");
+    var lirB = document.createElement("b");
+    var litxt = document.createTextNode("第"+(i+1)+"名："+data[i][0]+"空气质量：");
+    var lieBtx = document.createTextNode(data[i][1]);
+    lirB.appendChild(lieBtx);
+    lieli.appendChild(litxt);
+    lieli.appendChild(lirB);
+    resort.appendChild(lieli);
   }
 }
 
@@ -89,8 +93,7 @@ function init() {
 
   // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
   var btn = document.getElementById("sort-btn");
-  // btn.addEventListener('click',btnHandle);
-  btn.addEventListener('click',getData)
+  btn.addEventListener('click',btnHandle);
 }
 
 init();
