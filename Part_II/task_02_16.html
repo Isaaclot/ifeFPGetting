@@ -7,12 +7,11 @@
 
   </head>
 <body>
-
-  <div>
-    <label>城市名称：<input id="aqi-city-input" type="text"></label><br>
-    <label>空气质量指数：<input id="aqi-value-input" type="text"></label><br>
-    <button id="add-btn" onclick="addAqiData()">确认添加</button>
-  </div>
+    <form name="myform" action="#" method="post">
+      <label>城市名称：<input id="aqi-city-input" type="text" name="cityN"></label><br>
+      <label>空气质量指数：<input id="aqi-value-input" type="text"></label><br>
+      <button id="add-btn" onclick="addAqiData()">确认添加</button>
+    </form>
   <table id="aqi-table">
 
     <tr>

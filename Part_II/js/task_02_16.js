@@ -29,6 +29,10 @@ function addAqiData() {
     trEle.appendChild(tdaqi);
     trEle.appendChild(tdbtn)
     document.getElementById("aqi-table").appendChild(trEle);
+    var patt1=/[^a-z,A-Z,\s]/g;
+    if (cityNameValue.match(patt1) ！= null) {
+      alert("ERROR")
+    }
 
 
 
